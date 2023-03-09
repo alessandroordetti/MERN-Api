@@ -1,0 +1,29 @@
+{
+  "name": "mern-api",
+  "version": "1.0.0",
+  "description": "Goalsetter app ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alessandroordetti/MERN-Api.git"
+  },
+  "author": "Alessandro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alessandroordetti/MERN-Api/issues"
+  },
+  "homepage": "https://github.com/alessandroordetti/MERN-Api#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
