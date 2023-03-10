@@ -1,26 +1,26 @@
-//Creating controller
+
 
 // GET METHOD
-const getGoals = (req, res) => {
+const getGoals = asyncHandler (req, res) => {
     res.status(200).json({message: 'Get goals'});
 }
 
 // CREATE METHOD
-const setGoal = (req, res) => {
-/*     if(!req.body.text){
+const setGoal = asyncHandler (req, res) => {
+    if(!req.body.text){
         res.status(400)
         throw new Error('Please enter a text field')
-    } */
+    }
     res.status(200).json({message: 'Set goal'});
 }
 
 // UPDATE METHOD
-const updateGoal = (req, res) => {
+const updateGoal = asyncHandler (req, res) => {
     res.status(200).json({message: 'Updated goal'});
 }
 
 // DELETE METHOD
-const deleteGoal = (req, res) => {
+const deleteGoal = asyncHandler (req, res) => {
     res.status(200).json({message: 'Deleted goal'});
 }
 
