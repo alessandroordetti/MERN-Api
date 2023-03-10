@@ -1,8 +1,13 @@
 //THIS WILL BE OUR ENTRYPOINT
 const exp = require('constants');
+const colors = require('colors')
 const express = require('express');
 const dotenv = require('dotenv').config();
 const {errorHandler} = require('./middleware/errorMiddleware');
+const connectDB = require('./config/db')
+
+connectDB(); 
+
 const port = process.env.PORT || 5000;
 
 //Initialize express
